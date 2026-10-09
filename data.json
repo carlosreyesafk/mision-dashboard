@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-09T14:57:23.927503-04:00",
+  "generated_at": "2026-10-09T14:58:46.527336-04:00",
   "meta": {
     "objetivo": 100,
     "deadline": "2026-10-09T23:11:00-04:00",
     "nombre": "Misión Millonario 24/7"
   },
   "hero": {
-    "negocios_corriendo": 20,
-    "negocios_listados": 20,
+    "negocios_corriendo": 21,
+    "negocios_listados": 21,
     "outreach_enviados": 29,
     "respuestas": 1,
     "ingresos_usd": 0,
@@ -193,6 +193,15 @@
       "detalle": "https://carlosreyesafk.github.io/cvforge/ — 3 plantillas ATS, preview en vivo, PDF vía print. Vía de dinero: US$19 one-time (paywall 12/12 pruebas: USDT BSC on-chain + PayPal). Estado: live verificado (curl 200) 2026-10-",
       "estado": "live",
       "precio": "US$19 one-time"
+    },
+    {
+      "n": 21,
+      "nombre": "Superteam Earn (bounties)",
+      "url": "https://superteam.fun/earn/t/chachi",
+      "modelo": "bounties en USDC (US$1,390 identificados en 4 bounties de fit perfecto)",
+      "detalle": "https://superteam.fun/earn/t/chachi — cuenta \"Chachi\" verificada (email OTP 2026-10-09 ~14:46), perfil completo. Vía de dinero: bounties en USDC (US$1,390 identificados en 4 bounties de fit perfecto). Estado: live.",
+      "estado": "live",
+      "precio": "—"
     }
   ],
   "en_lanzamiento": [
@@ -298,6 +307,6 @@
   ],
   "notas_calidad": [
     "Superteam Earn: cuenta Chachi verificada 2026-10-09 14:46 (perfil + GitHub). Pendiente reconciliación: podría ser el negocio #21 — el control horario debe confirmar y renumerar.",
-    "Conteo oficial = encabezado de contador-negocios.md (20). La lista parseada trae 20 entradas."
+    "Conteo oficial = encabezado de contador-negocios.md (20). La lista parseada trae 21 entradas."
   ]
 }
