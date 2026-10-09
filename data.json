@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-09T14:58:46.527336-04:00",
+  "generated_at": "2026-10-09T15:40:38.458254-04:00",
   "meta": {
     "objetivo": 100,
     "deadline": "2026-10-09T23:11:00-04:00",
     "nombre": "Misión Millonario 24/7"
   },
   "hero": {
-    "negocios_corriendo": 21,
-    "negocios_listados": 21,
+    "negocios_corriendo": 22,
+    "negocios_listados": 23,
     "outreach_enviados": 29,
     "respuestas": 1,
     "ingresos_usd": 0,
@@ -196,6 +196,24 @@
     },
     {
       "n": 21,
+      "nombre": "MetricForge (calculadoras SaaS, inglés)",
+      "url": "https://carlosreyesafk.github.io/metricforge/",
+      "modelo": "Pro US$19 lifetime (paywall por hash de licencia)",
+      "detalle": "https://carlosreyesafk.github.io/metricforge/ — 10 calculadoras churn/LTV/CAC con fórmula visible. Vía de dinero: Pro US$19 lifetime (paywall por hash de licencia). Estado: live verificado (curl 200) 2026-10-09 ~15:00. C",
+      "estado": "live",
+      "precio": "—"
+    },
+    {
+      "n": 22,
+      "nombre": "PropOne (generador de propuestas, inglés)",
+      "url": "https://carlosreyesafk.github.io/propone/",
+      "modelo": "Pro US$19 pago único (PayPal + USDT visibles; entrega de código manual por email)",
+      "detalle": "https://carlosreyesafk.github.io/propone/ — landing + generador con preview en vivo, 5 temas, export PDF. Vía de dinero: Pro US$19 pago único (PayPal + USDT visibles; entrega de código manual por email). Estado: live ver",
+      "estado": "live",
+      "precio": "—"
+    },
+    {
+      "n": 21,
       "nombre": "Superteam Earn (bounties)",
       "url": "https://superteam.fun/earn/t/chachi",
       "modelo": "bounties en USDC (US$1,390 identificados en 4 bounties de fit perfecto)",
@@ -307,6 +325,6 @@
   ],
   "notas_calidad": [
     "Superteam Earn: cuenta Chachi verificada 2026-10-09 14:46 (perfil + GitHub). Pendiente reconciliación: podría ser el negocio #21 — el control horario debe confirmar y renumerar.",
-    "Conteo oficial = encabezado de contador-negocios.md (20). La lista parseada trae 21 entradas."
+    "Conteo oficial = encabezado de contador-negocios.md (20). La lista parseada trae 23 entradas."
   ]
 }
