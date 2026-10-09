@@ -1,0 +1,303 @@
+{
+  "generated_at": "2026-10-09T14:55:17.692162-04:00",
+  "meta": {
+    "objetivo": 100,
+    "deadline": "2026-10-09T23:11:00-04:00",
+    "nombre": "Misión Millonario 24/7"
+  },
+  "hero": {
+    "negocios_corriendo": 20,
+    "negocios_listados": 20,
+    "outreach_enviados": 29,
+    "respuestas": 1,
+    "ingresos_usd": 0,
+    "productos_gumroad": 13
+  },
+  "negocios": [
+    {
+      "n": 1,
+      "nombre": "Tienda digital Gumroad",
+      "url": "https://chachiafk.gumroad.com",
+      "modelo": "venta directa de productos digitales",
+      "detalle": "https://chachiafk.gumroad.com — 13 productos publicados (plantillas, packs, prompts, ebook). Vía de dinero: venta directa de productos digitales. Estado: live, 0 ventas.",
+      "estado": "live",
+      "precio": "US$12–49 por producto"
+    },
+    {
+      "n": 2,
+      "nombre": "Agencia outreach (demos + email)",
+      "url": null,
+      "modelo": "servicios web/GBP desde US$150 (RD) / US$499 (USA, máquina en construcción)",
+      "detalle": "demos personalizadas en Vercel + envío por Gmail. Vía de dinero: servicios web/GBP desde US$150 (RD) / US$499 (USA, máquina en construcción). Estado: ~28 envíos RD acumulados, **1 respuesta humana REAL 2026-10-09 11:20 A",
+      "estado": "live",
+      "precio": "Desde US$150 (RD) / US$499 (USA)"
+    },
+    {
+      "n": 3,
+      "nombre": "Gigs en marketplaces",
+      "url": null,
+      "modelo": "órdenes en marketplace",
+      "detalle": "3 gigs Fiverr (carlos_reyes_) + 1 servicio SEOClerks. Vía de dinero: órdenes en marketplace. Estado: live, 0 órdenes.",
+      "estado": "live",
+      "precio": "Por orden (marketplace)"
+    },
+    {
+      "n": 4,
+      "nombre": "Directorio Chachi RD",
+      "url": "https://chachi-directorio-rd.vercel.app",
+      "modelo": "destacados US$15/mes / portada US$30/mes",
+      "detalle": "https://chachi-directorio-rd.vercel.app — 24 listings reales SD en 6 categorías, buscador + filtros. Vía de dinero: destacados US$15/mes / portada US$30/mes. Captación: formularios FormSubmit → chachiafk@gmail.com. Estad",
+      "estado": "live",
+      "precio": "US$15–30/mes destacados"
+    },
+    {
+      "n": 5,
+      "nombre": "Micro-SaaS \"Generador de Contratos RD\"",
+      "url": "https://chachi-contratos-rd.vercel.app",
+      "modelo": "desbloqueo PRO 0",
+      "detalle": "https://chachi-contratos-rd.vercel.app — herramienta 100% frontend: contrato de alquiler gratis + préstamo/servicios PRO. Vía de dinero: desbloqueo PRO 0.085 SOL (≈US$9) con verificación real vía RPC público de Solana (p",
+      "estado": "live",
+      "precio": "PRO 0.085 SOL (≈US$9)"
+    },
+    {
+      "n": 6,
+      "nombre": "Nostr + propinas",
+      "url": "https://njump.me/npub1tae97n5hklgt63gp9el5jl7f05h35d6yc6lfh5htcuqwwk0lvtgq3t92vx",
+      "modelo": "propinas zaps",
+      "detalle": "npub Chachi, 3 relays. Vía de dinero: propinas zaps. Estado: preparado live.",
+      "estado": "live",
+      "precio": "Propinas (zaps)"
+    },
+    {
+      "n": 7,
+      "nombre": "Pay-per-lead dental",
+      "url": "https://chachi-pay-per-lead-dental.vercel.app/",
+      "modelo": "venta de leads calificados a clínicas",
+      "detalle": "https://chachi-pay-per-lead-dental.vercel.app/ (+ /pacientes.html) — landing compradores (US$8/lead válido, mín. 10) + activo de captación de pacientes. Vía de dinero: venta de leads calificados a clínicas. Estado: landi",
+      "estado": "live",
+      "precio": "US$8/lead (mín. 10)"
+    },
+    {
+      "n": 8,
+      "nombre": "Vigía Web (micro-SaaS uptime/SSL)",
+      "url": "https://vigia-web-rust.vercel.app",
+      "modelo": "premium US$9/mes en USDT-Tron (verificado vía Tronscan)",
+      "detalle": "https://vigia-web-rust.vercel.app — monitoreo uptime + SSL con alertas. Vía de dinero: premium US$9/mes en USDT-Tron (verificado vía Tronscan). Tablas Supabase creadas 2026-10-09 ~10:55. Estado: live verificado.",
+      "estado": "live",
+      "precio": "US$9/mes premium"
+    },
+    {
+      "n": 9,
+      "nombre": "ContractKit (micro-SaaS freelance US)",
+      "url": "https://contractkit-chachi.vercel.app",
+      "modelo": "PRO US$19 one-time (paywall verificado 5/5 contra RPC público de BSC)",
+      "detalle": "https://contractkit-chachi.vercel.app — contratos + invoices con late-fee para freelancers US, en inglés. Vía de dinero: PRO US$19 one-time (paywall verificado 5/5 contra RPC público de BSC). Estado: live verificado 2026",
+      "estado": "live",
+      "precio": "US$19 one-time"
+    },
+    {
+      "n": 10,
+      "nombre": "Pay-per-lead con bot calificador (srv-01)",
+      "url": "https://chachi-srv-payperlead-5t5zwm4y5-carlosreyesafks-projects.vercel.app",
+      "modelo": "US$150–450/mes o US$12/lead, PayPal + USDT visibles",
+      "detalle": "https://chachi-srv-payperlead-5t5zwm4y5-carlosreyesafks-projects.vercel.app — bot demo funcional + landing. Vía de dinero: US$150–450/mes o US$12/lead, PayPal + USDT visibles. Estado: live verificado (curl 200) 2026-10-0",
+      "estado": "live",
+      "precio": "US$150–450/mes o US$12/lead"
+    },
+    {
+      "n": 11,
+      "nombre": "Moderación crypto 24/7 (srv-02)",
+      "url": "https://chachimods-iir0yo8l8-carlosreyesafks-projects.vercel.app",
+      "modelo": "US$150/300/450/mes en USDT, piloto gratis 7 días",
+      "detalle": "https://chachimods-iir0yo8l8-carlosreyesafks-projects.vercel.app — landing de servicio. Vía de dinero: US$150/300/450/mes en USDT, piloto gratis 7 días. Estado: live. Outreach pendiente.",
+      "estado": "live",
+      "precio": "US$150–450/mes USDT"
+    },
+    {
+      "n": 12,
+      "nombre": "Transcripción productizada (srv-03)",
+      "url": "https://chachi-srv-transcripcion-rkcbp3fu6-carlosreyesafks-projects.vercel.app",
+      "modelo": "US$150/290/490/mes, PayPal + USDT visibles",
+      "detalle": "https://chachi-srv-transcripcion-rkcbp3fu6-carlosreyesafks-projects.vercel.app — landing con precios. Vía de dinero: US$150/290/490/mes, PayPal + USDT visibles. Estado: live verificado (curl 200) 2026-10-09 ~14:15. Outre",
+      "estado": "live",
+      "precio": "US$150–490/mes"
+    },
+    {
+      "n": 13,
+      "nombre": "Email copywriting (srv-04)",
+      "url": "https://chachi-srv-emailcopy-cgq1f0ez7-carlosreyesafks-projects.vercel.app",
+      "modelo": "secuencias desde US$299 (mín US$150), PayPal + USDT visibles",
+      "detalle": "https://chachi-srv-emailcopy-cgq1f0ez7-carlosreyesafks-projects.vercel.app — landing + muestras. Vía de dinero: secuencias desde US$299 (mín US$150), PayPal + USDT visibles. Estado: live verificado (curl 200) 2026-10-09 ",
+      "estado": "live",
+      "precio": "Desde US$299"
+    },
+    {
+      "n": 14,
+      "nombre": "PriceHawk (micro-SaaS, inglés)",
+      "url": "https://chachi-pricehawk-fv9ql93g9-carlosreyesafks-projects.vercel.app",
+      "modelo": "PRO US$12/mes o US$49 lifetime (paywall verificado on-chain)",
+      "detalle": "https://chachi-pricehawk-fv9ql93g9-carlosreyesafks-projects.vercel.app — rastreador de bajadas de precio e-commerce. Vía de dinero: PRO US$12/mes o US$49 lifetime (paywall verificado on-chain). Estado: live verificado (c",
+      "estado": "live",
+      "precio": "US$12/mes o US$49 lifetime"
+    },
+    {
+      "n": 15,
+      "nombre": "ListingKit (micro-SaaS realtors US, inglés)",
+      "url": "https://chachi-listingkit-lraiw2trq-carlosreyesafks-projects.vercel.app",
+      "modelo": "PRO US$29 one-time (PayPal primario)",
+      "detalle": "https://chachi-listingkit-lraiw2trq-carlosreyesafks-projects.vercel.app — kit de marketing con chequeo Fair Housing. Vía de dinero: PRO US$29 one-time (PayPal primario). Estado: live verificado (curl 200) 2026-10-09 ~14:",
+      "estado": "live",
+      "precio": "US$29 one-time"
+    },
+    {
+      "n": 16,
+      "nombre": "ProfitStack (directorio AI tools, inglés)",
+      "url": "https://chachi-profitstack-2u2d6uts0-carlosreyesafks-projects.vercel.app",
+      "modelo": "Featured US$29/mes / Spotlight US$79/mes",
+      "detalle": "https://chachi-profitstack-2u2d6uts0-carlosreyesafks-projects.vercel.app — 22 listings reales verificados. Vía de dinero: Featured US$29/mes / Spotlight US$79/mes. Estado: live verificado (curl 200) 2026-10-09 ~14:15.",
+      "estado": "live",
+      "precio": "US$29–79/mes"
+    },
+    {
+      "n": 17,
+      "nombre": "AgentHire (directorio agencias IA, inglés)",
+      "url": "https://chachi-agenthire-quqkdeduj-carlosreyesafks-projects.vercel.app",
+      "modelo": "Featured US$99/mes / pay-per-lead US$50",
+      "detalle": "https://chachi-agenthire-quqkdeduj-carlosreyesafks-projects.vercel.app — 20 agencias reales verificadas. Vía de dinero: Featured US$99/mes / pay-per-lead US$50. Estado: live verificado (curl 200) 2026-10-09 ~14:15.",
+      "estado": "live",
+      "precio": "US$99/mes o US$50/lead"
+    },
+    {
+      "n": 18,
+      "nombre": "HireWire (job board AI, inglés)",
+      "url": "https://chachi-hirewire-b9fnrddjj-carlosreyesafks-projects.vercel.app",
+      "modelo": "posts US$149 / Featured US$299 (PayPal + USDT)",
+      "detalle": "https://chachi-hirewire-b9fnrddjj-carlosreyesafks-projects.vercel.app — 10 empleos AI reales verificados hoy. Vía de dinero: posts US$149 / Featured US$299 (PayPal + USDT). Estado: live verificado (curl 200) 2026-10-09 ~",
+      "estado": "live",
+      "precio": "US$149–299/post"
+    },
+    {
+      "n": 19,
+      "nombre": "TeardownPro (servicio teardowns SaaS, inglés)",
+      "url": "https://carlosreyesafk.github.io/teardownpro/",
+      "modelo": "US$149 / pack US$399 (PayPal + USDT)",
+      "detalle": "https://carlosreyesafk.github.io/teardownpro/ — 2 teardowns reales (LaunchFast, Refine AI). Vía de dinero: US$149 / pack US$399 (PayPal + USDT). Estado: live verificado (curl 200) 2026-10-09 ~14:50. Deploy por GitHub Pag",
+      "estado": "live",
+      "precio": "US$149 / pack US$399"
+    },
+    {
+      "n": 20,
+      "nombre": "CVForge (resume builder, inglés)",
+      "url": "https://carlosreyesafk.github.io/cvforge/",
+      "modelo": "US$19 one-time (paywall 12/12 pruebas: USDT BSC on-chain + PayPal)",
+      "detalle": "https://carlosreyesafk.github.io/cvforge/ — 3 plantillas ATS, preview en vivo, PDF vía print. Vía de dinero: US$19 one-time (paywall 12/12 pruebas: USDT BSC on-chain + PayPal). Estado: live verificado (curl 200) 2026-10-",
+      "estado": "live",
+      "precio": "US$19 one-time"
+    }
+  ],
+  "en_lanzamiento": [
+    {
+      "nombre": "Newsletter Beehiiv",
+      "cola": "cola-navegador-100.md",
+      "existe_cola": true,
+      "estado": "en-cola"
+    },
+    {
+      "nombre": "Hive + Publish0x",
+      "cola": "cola-navegador-100.md",
+      "existe_cola": true,
+      "estado": "en-cola"
+    },
+    {
+      "nombre": "Bot de Telegram con cobro TON",
+      "cola": "cola-navegador-100.md",
+      "existe_cola": true,
+      "estado": "en-cola"
+    },
+    {
+      "nombre": "Comunidad premium Discord",
+      "cola": "cola-navegador-100.md",
+      "existe_cola": true,
+      "estado": "en-cola"
+    },
+    {
+      "nombre": "Redbubble POD",
+      "cola": "cola-navegador-100.md",
+      "existe_cola": true,
+      "estado": "en-cola"
+    },
+    {
+      "nombre": "Libro KDP (requiere toque Papi)",
+      "cola": "cola-navegador-100.md",
+      "existe_cola": true,
+      "estado": "en-cola"
+    },
+    {
+      "nombre": "Afiliados crypto",
+      "cola": "cola-navegador-100.md",
+      "existe_cola": true,
+      "estado": "en-cola"
+    },
+    {
+      "nombre": "Wallets: TON receptora, Tron USDT, Alby/Lightning",
+      "cola": "cola-navegador-crypto.md",
+      "existe_cola": true,
+      "estado": "en-cola"
+    },
+    {
+      "nombre": "Activación Nostr (claves + 5 notas)",
+      "cola": "cola-navegador-crypto.md",
+      "existe_cola": true,
+      "estado": "en-cola"
+    },
+    {
+      "nombre": "Activación Hive + Publish0x (3 posts)",
+      "cola": "cola-navegador-crypto.md",
+      "existe_cola": true,
+      "estado": "en-cola"
+    },
+    {
+      "nombre": "Newsletter 'The Leverage Letter' (Beehiiv, inglés)",
+      "cola": "cola-navegador-oleada2.md",
+      "existe_cola": true,
+      "estado": "en-cola"
+    },
+    {
+      "nombre": "Activaciones FormSubmit (ProfitStack, AgentHire)",
+      "cola": "cola-navegador-oleada2.md",
+      "existe_cola": true,
+      "estado": "en-cola"
+    },
+    {
+      "nombre": "RateKit API (micro-SaaS, inglés)",
+      "cola": "negocios-100-oleada3",
+      "existe_cola": true,
+      "estado": "bloqueado-temporal",
+      "nota": "Deploy Vercel bloqueado por límite 100/día — va mañana"
+    }
+  ],
+  "otros_frentes": [
+    {
+      "nombre": "CobraYa",
+      "url": "https://cobraya-xi.vercel.app",
+      "detalle": "SaaS cobranza pymes RD. RD$1,495 Base / RD$2,495 Pro. Follow-up pilotos: 12-oct. Criterio: 5 pilotos antes del 21-oct.",
+      "estado": "live"
+    },
+    {
+      "nombre": "Freelance",
+      "url": null,
+      "detalle": "Fiverr (carlos_reyes_): 3 gigs, 0 órdenes. Upwork: 0 Connects (verificación pendiente de Papi). Contra: perfil creado.",
+      "estado": "activo"
+    },
+    {
+      "nombre": "Inversiones",
+      "url": null,
+      "detalle": "Alpha: papel comercial 180 días al 9% (~RD$112,368, vence 23-oct). Fondo Quisqueya AFI Reservas en apertura.",
+      "estado": "activo"
+    }
+  ],
+  "notas_calidad": [
+    "Superteam Earn: cuenta Chachi verificada 2026-10-09 14:46 (perfil + GitHub). Pendiente reconciliación: podría ser el negocio #21 — el control horario debe confirmar y renumerar.",
+    "Conteo oficial = encabezado de contador-negocios.md (20). La lista parseada trae 20 entradas."
+  ]
+}

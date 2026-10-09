@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centro de Mando — Misión Millonario 24/7</title>
+<meta name="description" content="Dashboard en vivo de la Misión Millonario 24/7: negocios corriendo, outreach, ingresos y frentes activos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0e14; --bg2:#0d1219; --card:#121822; --card2:#161e2a;
+  --border:#1f2a3a; --text:#e8eef6; --muted:#8b98ab;
+  --green:#10b981; --green-dim:rgba(16,185,129,.12);
+  --amber:#f59e0b; --amber-dim:rgba(245,158,11,.12);
+  --red:#ef4444; --blue:#3b82f6; --violet:#8b5cf6;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,sans-serif;min-height:100vh}
+.wrap{max-width:1440px;margin:0 auto;padding:0 28px 60px}
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.hd-in{max-width:1440px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--green),#0ea5e9);display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;color:#04121a}
+.brand h1{font-size:18px;font-weight:800;letter-spacing:-.02em}
+.brand small{display:block;font-size:11px;color:var(--muted);font-weight:500}
+.updated{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted)}
+.pulse{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 0 0 rgba(16,185,129,.6);animation:pl 2s infinite}
+@keyframes pl{0%{box-shadow:0 0 0 0 rgba(16,185,129,.6)}70%{box-shadow:0 0 0 9px rgba(16,185,129,0)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}
+/* ---------- hero ---------- */
+.hero{padding:34px 0 8px}
+.hero h2{font-size:30px;font-weight:800;letter-spacing:-.03em;margin-bottom:6px}
+.hero p{color:var(--muted);font-size:14px;margin-bottom:22px}
+.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.stat{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--border);border-radius:16px;padding:18px;position:relative;overflow:hidden}
+.stat::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--ac,var(--green));opacity:.8}
+.stat .k{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600;margin-bottom:8px}
+.stat .v{font-size:34px;font-weight:800;letter-spacing:-.03em}
+.stat .v small{font-size:16px;color:var(--muted);font-weight:600}
+.stat .s{font-size:12px;color:var(--muted);margin-top:6px}
+/* ---------- meta bar ---------- */
+.meta{margin:20px 0 8px;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:20px 22px}
+.meta-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}
+.meta-top b{font-size:15px}
+.meta-top span{font-size:13px;color:var(--muted)}
+.bar{height:12px;background:#0b0f16;border-radius:99px;overflow:hidden;border:1px solid var(--border)}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--green),#0ea5e9);border-radius:99px;transition:width 1.2s ease}
+/* ---------- sections ---------- */
+section{margin-top:34px}
+.sec-hd{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px}
+.sec-hd h3{font-size:19px;font-weight:800;letter-spacing:-.02em}
+.count{background:var(--green-dim);color:var(--green);font-size:12px;font-weight:700;padding:4px 12px;border-radius:99px}
+.count.amber{background:var(--amber-dim);color:var(--amber)}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:12px;font-weight:600;padding:7px 14px;border-radius:99px;border:1px solid var(--border);background:var(--card);color:var(--muted);cursor:pointer;transition:.15s}
+.chip:hover{color:var(--text);border-color:#33415a}
+.chip.on{background:var(--green-dim);color:var(--green);border-color:rgba(16,185,129,.4)}
+/* ---------- business grid ---------- */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:14px}
+.card{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--border);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:10px;transition:.18s;position:relative}
+.card:hover{transform:translateY(-3px);border-color:#2c3c55;box-shadow:0 12px 32px rgba(0,0,0,.4)}
+.card .top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.card .num{font-size:11px;font-weight:800;color:var(--muted);background:#0b0f16;border:1px solid var(--border);border-radius:8px;padding:3px 8px}
+.card h4{font-size:15px;font-weight:700;letter-spacing:-.01em;line-height:1.35}
+.card .model{font-size:12.5px;color:var(--muted);line-height:1.5}
+.card .row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:6px}
+.price{font-size:12px;font-weight:700;color:var(--amber);background:var(--amber-dim);padding:5px 11px;border-radius:99px;white-space:nowrap}
+.live{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:800;color:var(--green);letter-spacing:.06em}
+.live i{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pl 2s infinite}
+.btn{font-size:12px;font-weight:700;color:#04121a;background:var(--green);padding:8px 16px;border-radius:10px;text-decoration:none;transition:.15s}
+.btn:hover{filter:brightness(1.12)}
+.btn.ghost{background:transparent;color:var(--muted);border:1px solid var(--border);cursor:default}
+/* ---------- launch list ---------- */
+.launch{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.lrow{display:flex;align-items:center;gap:14px;padding:13px 18px;border-bottom:1px solid var(--border);font-size:13.5px}
+.lrow:last-child{border-bottom:none}
+.lrow .dot{width:8px;height:8px;border-radius:50%;background:var(--amber);flex-shrink:0}
+.lrow .dot.blocked{background:var(--red)}
+.lrow b{font-weight:700}
+.lrow .src{margin-left:auto;font-size:11.5px;color:var(--muted);font-family:ui-monospace,monospace;white-space:nowrap}
+.badge{font-size:10.5px;font-weight:800;letter-spacing:.05em;padding:4px 10px;border-radius:99px;background:var(--amber-dim);color:var(--amber);white-space:nowrap}
+.badge.blocked{background:rgba(239,68,68,.12);color:var(--red)}
+/* ---------- otros frentes ---------- */
+.frentes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.frente{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--border);border-radius:16px;padding:20px}
+.frente h4{font-size:15px;font-weight:800;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.frente p{font-size:13px;color:var(--muted);line-height:1.65}
+.frente .btn{margin-top:12px;display:inline-block}
+/* ---------- footer ---------- */
+footer{margin-top:44px;padding-top:20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+.notes{margin-top:14px;font-size:12px;color:var(--muted);background:var(--card);border:1px dashed var(--border);border-radius:12px;padding:12px 16px;line-height:1.7}
+@media(max-width:1100px){.stats{grid-template-columns:repeat(3,1fr)}.frentes{grid-template-columns:1fr}}
+@media(max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}.hero h2{font-size:23px}}
+</style>
+</head>
+<body>
+<header><div class="hd-in">
+  <div class="brand"><div class="logo">₿</div><div><h1>Centro de Mando<small>Misión Millonario 24/7 · Chachi</small></h1></div></div>
+  <div class="updated"><span class="pulse"></span><span id="upd">cargando…</span></div>
+</div></header>
+<div class="wrap">
+  <div class="hero">
+    <h2>Todo lo que está en juego, en una pantalla.</h2>
+    <p>Datos reales del ledger de la misión · se actualizan solos cada 60 segundos.</p>
+    <div class="stats" id="stats"></div>
+  </div>
+  <div class="meta">
+    <div class="meta-top"><b>Meta de hoy: 100 negocios distintos</b><span id="countdown">—</span></div>
+    <div class="bar"><i id="barfill"></i></div>
+  </div>
+  <section>
+    <div class="sec-hd"><h3>Negocios corriendo <span class="count" id="ncount"></span></h3>
+      <div class="filters" id="filters"></div></div>
+    <div class="grid" id="grid"></div>
+  </section>
+  <section>
+    <div class="sec-hd"><h3>En lanzamiento <span class="count amber" id="lcount"></span></h3></div>
+    <div class="launch" id="launch"></div>
+  </section>
+  <section>
+    <div class="sec-hd"><h3>Otros frentes</h3></div>
+    <div class="frentes" id="frentes"></div>
+  </section>
+  <div class="notes" id="notes" style="display:none"></div>
+  <footer><span>Fuente: ledger Misión Millonario 24/7 · generado automáticamente</span><span id="gen"></span></footer>
+</div>
+<script>
+let DATA=null, FILTRO='todos';
+const CATS=[
+ ['todos','Todos'],
+ ['saas','Micro-SaaS'],
+ ['servicios','Servicios'],
+ ['directorios','Directorios'],
+ ['tienda','Tienda digital'],
+ ['otros','Otros'],
+];
+function cat(n){
+  n=n.nombre.toLowerCase();
+  if(/micro-saas|vigía|vigia|contractkit|pricehawk|listingkit|cvforge|ratekit/.test(n))return'saas';
+  if(/tienda|gumroad/.test(n))return'tienda';
+  if(/directorio|profitstack|agenthire|hirewire/.test(n))return'directorios';
+  if(/outreach|pay-per-lead|moderación|moderacion|transcripción|transcripcion|copywriting|teardown|bount|gig/.test(n))return'servicios';
+  return'otros';
+}
+function hace(ms){
+  const s=Math.floor((Date.now()-ms)/1000);
+  if(s<10)return'ahora mismo'; if(s<60)return'hace '+s+'s';
+  const m=Math.floor(s/60); if(m<60)return'hace '+m+' min';
+  return'hace '+Math.floor(m/60)+'h '+m%60+'min';
+}
+function render(){
+  const d=DATA, h=d.hero;
+  const S=[
+    ['Negocios corriendo',h.negocios_corriendo,'','var(--green)','meta 100 hoy'],
+    ['Outreach enviados',h.outreach_enviados,'','var(--blue)','emails 1:1'],
+    ['Respuestas',h.respuestas,'','var(--violet)','humanas reales'],
+    ['Ingresos', '$'+h.ingresos_usd,'','var(--amber)','reto del dólar'],
+    ['Productos Gumroad',h.productos_gumroad,'','var(--green)','en tienda'],
+    ['En lanzamiento',d.en_lanzamiento.length,'','var(--amber)','cola navegador'],
+  ];
+  document.getElementById('stats').innerHTML=S.map(([k,v,sm,c,s])=>
+    `<div class="stat" style="--ac:${c}"><div class="k">${k}</div><div class="v">${v}</div><div class="s">${s}</div></div>`).join('');
+  // meta bar
+  const pct=Math.min(100,Math.round(h.negocios_corriendo/d.meta.objetivo*100));
+  document.getElementById('barfill').style.width=pct+'%';
+  document.querySelector('.meta-top b').textContent=`Meta de hoy: ${h.negocios_corriendo}/${d.meta.objetivo} negocios distintos (${pct}%)`;
+  // countdown
+  const dl=new Date(d.meta.deadline).getTime(), now=Date.now(), diff=dl-now;
+  document.getElementById('countdown').textContent = diff>0
+    ? 'Quedan '+Math.floor(diff/3600000)+'h '+Math.floor(diff%3600000/60000)+'m para las 11:11 PM'
+    : 'Meta del día vencida — la máquina sigue';
+  document.getElementById('ncount').textContent=h.negocios_corriendo+' live';
+  // filters
+  document.getElementById('filters').innerHTML=CATS.map(([id,lb])=>
+    `<button class="chip${FILTRO===id?' on':''}" data-f="${id}">${lb}</button>`).join('');
+  document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{FILTRO=c.dataset.f;render();});
+  // grid
+  const list=d.negocios.filter(n=>FILTRO==='todos'||cat(n)===FILTRO);
+  document.getElementById('grid').innerHTML=list.map(n=>`
+    <div class="card">
+      <div class="top"><span class="num">#${n.n}</span><span class="live"><i></i>LIVE</span></div>
+      <h4>${esc(n.nombre)}</h4>
+      <div class="model">${esc(n.modelo||'')}</div>
+      <div class="row"><span class="price">${esc(n.precio||'—')}</span>
+      ${n.url?`<a class="btn" href="${esc(n.url)}" target="_blank" rel="noopener">Abrir →</a>`:`<span class="btn ghost">Sin link único</span>`}</div>
+    </div>`).join('');
+  // launch
+  document.getElementById('lcount').textContent=d.en_lanzamiento.length+' en cola';
+  document.getElementById('launch').innerHTML=d.en_lanzamiento.map(l=>`
+    <div class="lrow"><span class="dot${l.estado==='bloqueado-temporal'?' blocked':''}"></span>
+    <div><b>${esc(l.nombre)}</b>${l.nota?`<div style="font-size:12px;color:var(--muted);margin-top:2px">${esc(l.nota)}</div>`:''}</div>
+    <span class="badge${l.estado==='bloqueado-temporal'?' blocked':''}">${l.estado==='bloqueado-temporal'?'BLOQUEADO':'EN COLA'}</span>
+    <span class="src">${esc(l.cola||'')}</span></div>`).join('');
+  // frentes
+  document.getElementById('frentes').innerHTML=d.otros_frentes.map(f=>`
+    <div class="frente"><h4>${esc(f.nombre)}</h4><p>${esc(f.detalle)}</p>
+    ${f.url?`<a class="btn" href="${esc(f.url)}" target="_blank" rel="noopener">Abrir →</a>`:''}</div>`).join('');
+  // notes + gen
+  if(d.notas_calidad&&d.notas_calidad.length){
+    const el=document.getElementById('notes'); el.style.display='block';
+    el.innerHTML='<b>Notas de calidad de datos:</b><br>'+d.notas_calidad.map(esc).join('<br>');
+  }
+  document.getElementById('gen').textContent='Generado: '+new Date(d.generated_at).toLocaleString('es-DO');
+  tick();
+}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function tick(){
+  if(!DATA)return;
+  document.getElementById('upd').textContent='Actualizado '+hace(new Date(DATA.generated_at).getTime());
+}
+async function load(){
+  try{
+    const r=await fetch('data.json?v='+Date.now(),{cache:'no-store'});
+    if(r.ok){DATA=await r.json();render();}
+  }catch(e){/* conserva datos anteriores */}
+}
+load(); setInterval(load,60000); setInterval(tick,10000);
+</script>
+</body>
+</html>
