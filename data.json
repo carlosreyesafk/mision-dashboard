@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-09T15:40:38.458254-04:00",
+  "generated_at": "2026-10-09T21:07:48.774290-04:00",
   "meta": {
     "objetivo": 100,
     "deadline": "2026-10-09T23:11:00-04:00",
     "nombre": "Misión Millonario 24/7"
   },
   "hero": {
-    "negocios_corriendo": 22,
-    "negocios_listados": 23,
+    "negocios_corriendo": 27,
+    "negocios_listados": 27,
     "outreach_enviados": 29,
     "respuestas": 1,
     "ingresos_usd": 0,
@@ -213,11 +213,47 @@
       "precio": "—"
     },
     {
-      "n": 21,
+      "n": 23,
       "nombre": "Superteam Earn (bounties)",
       "url": "https://superteam.fun/earn/t/chachi",
       "modelo": "bounties en USDC (US$1,390 identificados en 4 bounties de fit perfecto)",
-      "detalle": "https://superteam.fun/earn/t/chachi — cuenta \"Chachi\" verificada (email OTP 2026-10-09 ~14:46), perfil completo. Vía de dinero: bounties en USDC (US$1,390 identificados en 4 bounties de fit perfecto). Estado: live.",
+      "detalle": "https://superteam.fun/earn/t/chachi — cuenta \"Chachi\" verificada (email OTP 2026-10-09 ~14:46), perfil completo. Vía de dinero: bounties en USDC (US$1,390 identificados en 4 bounties de fit perfecto). Estado: live desde ",
+      "estado": "live",
+      "precio": "—"
+    },
+    {
+      "n": 24,
+      "nombre": "Discord / Chachi Lab",
+      "url": "https://discord.gg/SdeHMtbFV",
+      "modelo": "comunidad premium US$9/mes",
+      "detalle": "servidor \"Chachi Lab\" creado (usuario chachi.afk), canales #anuncios, #recursos-gratis, #premium. Invite permanente: https://discord.gg/SdeHMtbFV — vía de dinero: comunidad premium US$9/mes. Estado: live desde 2026-10-09",
+      "estado": "live",
+      "precio": "—"
+    },
+    {
+      "n": 25,
+      "nombre": "Menufy (generador de menús QR)",
+      "url": "https://carlosreyesafk.github.io/menufy/",
+      "modelo": "PRO US$29 pago único (quita badge, logo + colores propios; paywall USDT-BSC on-chain ≥29 + código manual PayPal)",
+      "detalle": "https://carlosreyesafk.github.io/menufy/ — constructor bilingüe ES/EN: arma tu menú, genera link público `#m=` + QR (api.qrserver.com), imprime menú/volante vía CSS print. Vía de dinero: PRO US$29 pago único (quita badge",
+      "estado": "live",
+      "precio": "—"
+    },
+    {
+      "n": 26,
+      "nombre": "Factux (facturas/cotizaciones LATAM)",
+      "url": "https://carlosreyesafk.github.io/factux/",
+      "modelo": "PRO US$19 pago único (logo propio + 5 plantillas premium; paywall USDT-BSC on-chain ≥19 + código manual PayPal)",
+      "detalle": "https://carlosreyesafk.github.io/factux/ — generador 100% español: factura/cotización con ITBIS configurable (18% default), RNC opcional, 6 monedas LATAM, numeración FAC-0001/COT-0001, estados borrador/emitida/pagada, PD",
+      "estado": "live",
+      "precio": "—"
+    },
+    {
+      "n": 27,
+      "nombre": "TipBio (link-in-bio + tip jar)",
+      "url": "https://carlosreyesafk.github.io/tipbio/",
+      "modelo": "PRO US$19 pago único (6 temas premium + quitar badge; paywall USDT-BSC on-chain ≥19 + código manual PayPal)",
+      "detalle": "https://carlosreyesafk.github.io/tipbio/ — constructor ES/EN: bio pública por link `#b=` + QR, tip jar con el PayPal/USDT-BSC DEL CREADOR (editable en cliente), 8 temas. Vía de dinero: PRO US$19 pago único (6 temas premi",
       "estado": "live",
       "precio": "—"
     }
@@ -325,6 +361,6 @@
   ],
   "notas_calidad": [
     "Superteam Earn: cuenta Chachi verificada 2026-10-09 14:46 (perfil + GitHub). Pendiente reconciliación: podría ser el negocio #21 — el control horario debe confirmar y renumerar.",
-    "Conteo oficial = encabezado de contador-negocios.md (20). La lista parseada trae 23 entradas."
+    "Conteo oficial = encabezado de contador-negocios.md (20). La lista parseada trae 27 entradas."
   ]
 }
